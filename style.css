@@ -1,0 +1,57 @@
+.products{
+     display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 24px;
+
+   padding: 20px;
+ 
+}
+
+
+
+
+.product-img:hover .product-actions {
+    opacity: 1;
+}
+
+
+  .featured::before{
+    content: "Хіт продажів";
+    position: absolute;
+    top: -1px;
+    color: green;
+    left: 10px;
+    font-weight: 1000;
+    font-size: 30px;
+    
+  }
+
+
+  .product-card{
+    transition: transform 250ms ease-out;
+    box-shadow: 250ms ease-out;
+  }
+
+  .product-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    
+  }
+
+
+.product-actions{
+ opacity: 0;
+transition: opacity 250ms ease-out;
+transition-delay: 100ms;
+}
+
+.product-img{
+    opacity: 1;
+}
+  
+
+  .featured {
+  grid-column: span 2;
+  position: relative;
+}
+
